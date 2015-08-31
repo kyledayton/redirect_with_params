@@ -15,10 +15,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install redirect_with_params
-
 ## Usage
 
 Use `redirect_with_params` in place of `redirect` in your Routes file. This will preserve the query parameters in the redirect.
