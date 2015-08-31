@@ -34,7 +34,17 @@ My::Application.routes.draw do
 end
 ```
 
-Navigating your browser to `/some/route/123?my_param=zebra` will redirect you to `/some/new/route/123?my_param=zebra`
+Navigating your browser to `/some/route/123?my_param=zebra&source=web` will redirect you to `/some/new/route/123?my_param=zebra&source=web`
+
+Optionally, you can specify a param whitelist:
+
+```ruby
+My::Application.routes.draw do
+  get "some/route/:id" => redirect_with_params(:source) { |path_params, request| "/some/new/route/#{path_params[:id]}" }
+end
+```
+
+Navigating your browser to `/some/route/123?my_param=zebra&source=web` will redirect you to `/some/new/route/123?source=web`
 
 ## Contributing
 
