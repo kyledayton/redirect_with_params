@@ -7,7 +7,7 @@ Preserve query parameters through Rails routing redirects
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem 'redirect_with_params', require: false
+gem 'redirect_with_params'
 ```
 
 And then execute:
@@ -20,13 +20,9 @@ Or install it yourself as:
 
 Add this line to your `config/routes.rb`:
 
-```ruby
-require 'redirect_with_params'
-```
-
 ## Usage
 
-Use `redirect_with_params` in place of `redirect` in your Routes file. This will perserve the query parameters in the redirect.
+Use `redirect_with_params` in place of `redirect` in your Routes file. This will preserve the query parameters in the redirect.
 
 ```ruby
 My::Application.routes.draw do
