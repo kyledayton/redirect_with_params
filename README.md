@@ -1,6 +1,7 @@
 # Redirect With Params
 
-Preserve query parameters through Rails routing redirects
+Preserve query parameters through Rails routing redirects  
+Compatible with Rails 3.2+ & Rails 4
 
 ## Installation
 
